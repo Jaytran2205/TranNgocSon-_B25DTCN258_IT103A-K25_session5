@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đội Ngũ Bác Sĩ - Nha Khoa</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .team-section {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .team-section h2 {
+            color: #1e90ff;
+            font-size: 32px;
+            margin-bottom: 40px;
+            font-weight: bold;
+        }
+
+        .team-container {
+            max-width: 800px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .team-member {
+            background-color: #e6f7ff;
+            padding: 30px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .team-member:hover {
+            background-color: #e6f7ff;
+        }
+
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            object-fit: cover;
+        }
+
+        .team-member h3 {
+            color: #1e90ff;
+            font-size: 18px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .team-member p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .services-section {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .services-section h2 {
+            color: #1e90ff;
+            font-size: 32px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .services-list {
+            max-width: 800px;
+            margin: 0 auto;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .services-list p {
+            margin-bottom: 8px;
+        }
+
+        .service-divider {
+            border-top: 1px solid #ddd;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Đội Ngũ Bác Sĩ Section -->
+    <section class="team-section">
+        <h2>Đội Ngũ Bác Sĩ</h2>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="./Screenshot 2026-01-04 115505.png" alt="Bác sĩ A">
+                <h3>Bác sĩ A</h3>
+                <p>Chuyên khoa Nha khoa tổng quát</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="service-divider"></div>
+
+    <!-- Dịch Vụ Nha Khoa Section -->
+    <section class="services-section">
+        <h2>Dịch Vụ Nha Khoa</h2>
+        <div class="services-list">
+            <p>Khám và tư vấn răng miệng tổng quát</p>
+            <p>Tẩy trắng răng</p>
+            <p>Niềng răng thẩm mỹ</p>
+        </div>
+    </section>
+</body>
+</html>

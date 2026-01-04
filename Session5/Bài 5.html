@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ý Kiến Phản Hồi - Nha Khoa</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            padding: 40px 20px;
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+        }
+
+        .form-container h2 {
+            color: #1e90ff;
+            font-size: 28px;
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-size: 14px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            max-width: 250px;
+            padding: 10px;
+            border: 2px solid #1e90ff;
+            border-radius: 4px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        .form-group textarea {
+            max-width: 250px;
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: #999;
+        }
+
+        .submit-btn {
+            display: block;
+            margin: 30px auto 0;
+            padding: 10px 30px;
+            background-color: #00bfff;
+            color: white;
+            border: 2px solid black;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background-color: #0099cc;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Ý Kiến Phản Hồi tối Nha Sỹ</h2>
+        <form>
+            <div class="form-group">
+                <label for="fullname">Họ và tên:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Nhập họ và tên">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Nhập email của bạn">
+            </div>
+
+            <div class="form-group">
+                <label for="feedback">Phản hồi của bạn:</label>
+                <textarea id="feedback" name="feedback" placeholder="Nhập ý kiến của bạn..."></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Gửi ý kiến</button>
+        </form>
+    </div>
+</body>
+</html>
